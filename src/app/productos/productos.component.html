@@ -1,0 +1,52 @@
+<app-barra></app-barra>
+
+<div class="container mt-4">
+    <div class="text-center mb-5">
+        <a class="btn btn-warning btn-md float-start" routerLink="/provincias" >Volver</a>
+        <h1>Productos de {{ provinciaSlctd }}</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="form-group">
+                <input
+                    [(ngModel)]="filtroTexto"
+                    (ngModelChange)="onFiltroTextoChange($event)"
+                    type="text"
+                    class="form-control"
+                    id="filtroTexto"
+                    placeholder="Ingresa el nombre o código del producto">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <input
+                [(ngModel)]="filtroPrecio"
+                (ngModelChange)="onFiltroPrecioChange($event)"
+                [max]="precioMaximo"
+                type="range"
+                class="form-range"
+                id="filtroPrecio">
+            <label for="filtroPrecio" class="form-label mt-1">Precio máximo - seleccionado: ${{filtroPrecio}}</label>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="productosFiltrados.length > 0; else nada">
+        <div class="card-group col-xs-12 col-sm-6 col-md-4 col-lg-3 g-1" *ngFor="let producto of productosFiltrados">
+            <div class="card" >
+                <div class="card-body">
+                    <h5 class="card-title">{{producto.nombre}}</h5>
+                    <h6 class="card-subtitle float-end text-muted">{{producto.ean}}</h6>
+                </div>
+                <div class="card-footer text-center text-uppercase">
+                    <a class="btn btn-success btn-md">${{producto.precio}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #nada>
+        <div class="alert alert-danger" role="alert">
+            No hay productos para mostrar
+        </div>
+    </ng-template>
+
+</div>

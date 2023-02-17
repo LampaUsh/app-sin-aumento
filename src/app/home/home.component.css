@@ -1,0 +1,63 @@
+.jumbotron {
+    margin-left:6%;
+    margin-right:6%;
+}
+
+.jumbotron h1 {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center; 
+    background: #070707; 
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    text-shadow: 0px 3px 3px rgba(45, 105, 22, 0.856),0px -1px 1px rgba(0,0,0,0.3);
+}
+
+p {
+    margin: 0 0%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.button-prov {
+    background: rgb(28, 153, 16);
+    color: rgb(0, 0, 0);
+}
+
+.button-prov:hover {
+    background: rgb(9, 66, 4);
+    color: white;
+    box-shadow: 0 4px 16px rgb(28, 153, 16);
+    transition: all 0.2s ease;
+}
+
+.button-prod {
+    background: rgb(48, 197, 34);
+    color: rgb(0, 0, 0);
+}
+
+.button-prod:hover {
+    background: rgb(9, 66, 4);
+    color: white;
+    box-shadow: 0 4px 16px rgb(48, 197, 34);
+    transition: all 0.2s ease;
+}
+
+
+.button-ean{
+    background: rgb(219, 143, 0);
+    color: rgb(0, 0, 0);
+}
+
+.button-ean:hover {
+    background: rgb(128, 84, 3);
+    color: white;
+    box-shadow: 0 4px 16px rgb(219, 143, 0);
+    transition: all 0.2s ease;
+}
+
+
+

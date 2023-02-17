@@ -1,0 +1,59 @@
+.container-fluid {
+    text-align: center;
+    z-index: -1;
+}
+
+.titulo {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.75px;
+}
+
+.navbar {
+    margin-top: 0;
+    margin-left:8% ;
+    margin-right:8% ;
+    letter-spacing: 3px;
+    background: linear-gradient(rgb(126, 216, 104),rgb(255, 255, 255));
+    border-bottom-left-radius :13% ;
+    border-bottom-right-radius :13% ;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+    font-weight: none;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.navbar a:hover {
+    color: rgb(10, 10, 10);
+}
+
+
+.nav-item{
+    padding-right: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar li:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 30px  rgb(255, 255, 255);
+}
+
+.navbar li a{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.75px;
+}
+

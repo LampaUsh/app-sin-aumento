@@ -18,7 +18,7 @@ const routes: Routes = [
     path: 'provincias/:nombreProvincia/productos',
     component: ProductosComponent,
   },
-  //{ path: '**', /* redirectTo: '/home' */ component: P404Component },
+  //{ path: '**', /* redirectTo: '/home' */ component: PagErrorComponent },
 ];
 
 @NgModule({
